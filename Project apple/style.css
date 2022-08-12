@@ -1,0 +1,160 @@
+.header {
+    /* height: 800px; */
+    height: 10%;
+    width: 100%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.img-carousel {
+    height: 650px;
+    width: 100%;
+}
+
+/* body */
+.main {
+    height: 80%;
+}
+
+.a-logo {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.nav-main a {
+    /* border-right: 1px solid gray; */
+    padding: 3px 19px 3px 19px;
+    margin-right: 20px;
+    color: black;
+    border-radius: 50px;
+}
+
+.nav-main a:last-child {
+    border-right: none;
+}
+
+.price {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.content {
+    margin-left: 13px;
+}
+
+.gach {
+    height: 5px;
+    width: 90px;
+    background-color: #34b7a7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -16px;
+    margin-bottom: 20px;
+}
+
+.time-sale {
+    height: 30%;
+    width: 100%;
+}
+
+.sale {
+    margin-top: 40px;
+}
+
+.sale ul li {
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 35px;
+    color: red;
+    margin-right: 3px;
+    margin-top: 5px;
+    font-weight: 600;
+    background: white;
+    border-radius: 50%;
+    /* max-height: 120px;
+    max-width: 80px; */
+    width: 90px;
+    height: 90px;
+    line-height: 33px;
+}
+.sale ul {
+    margin: 0;
+    padding: 0;
+}
+
+.buynow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* footer */
+
+.col-footer ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.col-footer ul li {
+    list-style-type: none;
+}
+
+.col-footer ul {
+    padding-left: 0;
+}
+
+.col-footer ul li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.footer {
+    margin-bottom: 10px;
+}
+
+.nav-footer a {
+    padding: 0px 5px 0px 5px;
+}
+
+/* hover */
+
+.hover-khung:hover {
+    border: 1px solid gray;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.img-hover:hover {
+    position: relative;
+    top: -10px;
+}
+
+/* .a-hover:hover {
+    background: rgb(240, 240, 247);
+    color: black;
+} */
+
+.a-hover {
+    color: black;
+    font-weight: 400;
+}
+
+.active {
+    background: #34b7a7;
+    color: white !important;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel {
+        display: none;
+    }
+}

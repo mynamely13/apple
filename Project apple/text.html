@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <did id="demo">
+        <div id="h"></div>
+        <div id="m"></div>
+        <div id="s"></div>
+    </did>
+    <script>
+        var gio = document.getElementById("h");
+        var phut = document.getElementById("m");
+        var giay = document.getElementById("s");
+
+        var h = 2;
+        var m = 10; 
+        var s = 15;
+        console.log(gio);
+        gio.innerHTML = "0" + 2;
+        phut.innerHTML = 10;
+        giay.innerHTML = 15;
+
+        function start(){
+            if( s === 0 ){
+                m -= 1;
+                s = 59;
+            }
+
+            if( m === 0 ){
+                h -= 1;
+                m = 59;
+            }
+
+            if( h === 0 ){
+                clearInterval(timeout);
+            }
+
+            if( s < 10 ){
+                giay.innerHTML = "0" + s;
+            }else{
+                giay.innerHTML = s;
+            }
+
+            if( m < 10 ){
+                phut.innerHTML = "0" + m;
+            }else{
+                phut.innerHTML = m;
+            }
+
+            if( h < 10 ){
+                gio.innerHTML = "0" + h;
+            }else{
+                gio.innerHTML = h;
+            }
+            
+        }
+
+        timeout = setInterval(function () {
+                s--;
+                console.log(s);
+                start();
+        }, 1000);
+    </script>
+</body>
+</html>
