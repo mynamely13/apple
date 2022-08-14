@@ -135,9 +135,10 @@
 .close {
     color: white;
     font-size: 30px;
-    display: flex;
+    /* display: flex;
     justify-content: left;
-    float: right;
+    float: right; */
+    position: absolute;
 }
 
 .cmodel {
@@ -537,8 +538,9 @@
         display: block;
     }
     .close {
-        position: relative;
-        left: 130px;
+        /* left: 140px;
+        position: absolute; */
+        width: 46%;
     }
     .content {
         opacity: 0.5;
