@@ -549,25 +549,4 @@
         } */
 }
 
-@media screen and (max-width: 360px) {
-    .navigation {
-        display: none;
-    }
-    .action {
-        display: flex;
-    }
-    .action .fa-bars {
-        display: block;
-    }
-    .close {
-        position: relative;
-        left: 100px;
-    }
-    .content {
-        opacity: 0.5;
-    }
-    /* .action {
-            position: relative;
-            right: -48px;
-        } */
-}
+
