@@ -561,7 +561,7 @@
     }
     .close {
         position: relative;
-        left: 130px;
+        left: 100px;
     }
     .content {
         opacity: 0.5;
