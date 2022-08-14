@@ -548,3 +548,26 @@
             right: -48px;
         } */
 }
+
+@media screen and (max-width: 360px) {
+    .navigation {
+        display: none;
+    }
+    .action {
+        display: flex;
+    }
+    .action .fa-bars {
+        display: block;
+    }
+    .close {
+        position: relative;
+        left: 130px;
+    }
+    .content {
+        opacity: 0.5;
+    }
+    /* .action {
+            position: relative;
+            right: -48px;
+        } */
+}
