@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="source/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="javascript.js"></script>
+        <script>
+            window.onload = () => {
+                active('services');
+                active('services2');
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid container-about">
+            <header class="header">
+                <div class="logo">
+                    <a href="">KELLY</a>
+                </div>
+                <div class="navigation">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="active('home')" id="home" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="active('about')" id="about" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="active('resume')" id="resume" href="Resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="active('services')" id="services" href="Services.html"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="active('portfolio')" id="portfolio" href="portfolio.html"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="active('contact')" id="contact" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-bars" onclick="openModel()"></i>
+                </div>
+            </header>
+            <main class="main-about">
+                <div class="container about">
+                    <h2>SERVICES</h2>
+                    <span
+                        >Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</span
+                    >
+                    <div class="row services1">
+                        <div class="col-lg-4 p-2">
+                            <div class="icon">
+                                <a href=""><i class="fa fa-dribbble logo1"></i> </a>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 p-2">
+                            <div class="icon">
+                                <a href=""><i class="fa fa-file logo2"></i> </a>
+                                <h4>Sed Perspiciatis</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-2">
+                            <div class="icon">
+                                <a href=""> <i class="fa fa-file logo3"></i> </a>
+                                <h4>Sed Perspiciatis</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row services2">
+                        <div class="col-lg-4 p-2">
+                            <div class="icon">
+                                <a href=""><i class="fa fa-file logo4"></i></a>
+                                <h4>Nemo Enim</h4>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 p-2">
+                            <div class="icon">
+                                <a href=""><i class="fa fa-file logo5"></i> </a>
+                                <h4>Dele Cardo</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-2">
+                            <div class="icon">
+                                <a href=""> <i class="fa fa-file logo6"></i> </a>
+                                <h4>Divera Don</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="arrow">
+                <a href="#"><i class="fa fa-arrow-up"></i></a>
+            </div>
+
+            <div class="model1">
+                <div class="close" onclick="closeModel()">X</div>
+                <div class="bubble">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" id="home2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="services2" href="Services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="portfolio2" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="f-content">
+                    <span>&copy; Copyright <strong>Kelly</strong> .All rights reserved</span>
+                    <p>Design by <span class="name"> Khanh Ly </span></p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
