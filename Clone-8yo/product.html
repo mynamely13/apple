@@ -14,6 +14,7 @@
             window.onload = () => {
                 domImg();
                 countGio();
+                activeNavi('sanpham');
             };
         </script>
     </head>
@@ -76,9 +77,9 @@
             <div class="wrrap-navigation">
                 <div class="navigation">
                     <ul>
-                        <li><a href="index.html" class="active filter" data-filters="trangchu">TRANG CHỦ</a></li>
-                        <li><a href="index.html" class="filter" data-filters="sanpham">SẢN PHẨM</a></li>
-                        <li><a href="size.html" class="filter" data-filters="bangsize">BẢNG SIZE</a></li>
+                        <li><a href="index.html" id="trangchu" class="active filter" data-filters="trangchu">TRANG CHỦ</a></li>
+                        <li><a href="index.html" id="sanpham" class="filter" data-filters="sanpham">SẢN PHẨM</a></li>
+                        <li><a href="size.html" id="bansize" class="filter" data-filters="bangsize">BẢNG SIZE</a></li>
                         <li><a id="ins" class="filter" data-filters="insta">INSTAGRAM 8YO</a></li>
 
                         <li><a id="gt" class="filter" data-filters="gioithieu">GIÓI THIỆU 8YO</a></li>
@@ -94,8 +95,8 @@
                         <a href="index.html">Trang chủ</a> / <a href="">Sản phẩm mới</a> /
                         <a href=""> <span id="name"></span></a>
                     </div>
-                    <div class="col-lg-6">
-                        <img style="width: 95%; height: 550px" class="img-product" src="" alt="" />
+                    <div class="col-lg-6 img">
+                        <img class="img-product" src="" alt="" />
                     </div>
                     <div class="col-lg-6">
                         <div

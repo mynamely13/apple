@@ -196,6 +196,10 @@
     cursor: pointer;
 }
 
+.card img {
+    margin: 0;
+}
+
 .sale {
     position: absolute;
 
@@ -431,6 +435,8 @@
     position: sticky;
     top: 70px;
     padding-bottom: 20px;
+    height: 550px;
+    width: 95%;
 }
 
 /* slide */
@@ -445,6 +451,11 @@
     overflow: hidden;
 }
 
+/* .img {
+    height: 550px;
+    width: 95%;
+} */
+
 @keyframes product {
     25% {
         opacity: 0.5;
@@ -454,7 +465,59 @@
     }
 }
 
-@media (max-width: 376px) {
+.table img {
+    width: 100px;
+}
+
+.table td {
+    position: relative;
+}
+
+.table button {
+    position: absolute;
+    left: -10%;
+    border-radius: 50%;
+    border: none;
+}
+
+.table button span {
+    position: absolute;
+    top: -12%;
+    font-size: 11px;
+    left: 5%;
+    opacity: 0.7;
+}
+
+.note textarea {
+    height: 100px;
+    width: 100%;
+    border-color: #4889c9;
+}
+
+.phivc button:hover {
+    opacity: 0.5;
+}
+
+.tableSize .row img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .wrrap-search {
+        display: none;
+    }
+
+    .navigation ul li a {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+
+    #page {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
     .wrrap-search {
         display: none;
     }
@@ -516,56 +579,7 @@
     .cart-4 {
         margin-left: 0px !important;
     }
-}
-
-.table img {
-    width: 100px;
-}
-
-.table td {
-    position: relative;
-}
-
-.table button {
-    position: absolute;
-    left: -10%;
-    border-radius: 50%;
-    border: none;
-}
-
-.table button span {
-    position: absolute;
-    top: -12%;
-    font-size: 11px;
-    left: 5%;
-    opacity: 0.7;
-}
-
-.note textarea {
-    height: 100px;
-    width: 100%;
-    border-color: #4889c9;
-}
-
-.phivc button:hover {
-    opacity: 0.5;
-}
-
-.tableSize .row img {
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    .wrrap-search {
-        display: none;
-    }
-
-    .navigation ul li a {
-        font-size: 12px;
-        padding: 15px 15px;
-    }
-
-    #page {
-        display: none;
+    .img-product {
+        height: 420px !important;
     }
 }

@@ -43,7 +43,27 @@ const arrayProduct = {
     },
     sp4: {
         name: '8YO LULLABY TEE Ver2.0 # 3 COLOR',
-        img: 'image/product/14_f4d83bdb6db24e84a03ad7e389db78a0_master.webp',
+        img: 'image/product/13_b0e025e20ed2499b8ee0ff13cf84ed30_master.webp',
+        price: 190000,
+    },
+    sp5: {
+        name: '8YO LULLABY TEE Ver2.0 # 3 COLOR',
+        img: 'image/product/8_1fb9a3beb4524aaf84e7b00e95f68d0d_master.webp',
+        price: 190000,
+    },
+    sp6: {
+        name: '8YO LULLABY TEE Ver2.0 # 3 COLOR',
+        img: 'image/product/1__2__faa864ffecf54033a8c5cc68f614d158_master.webp',
+        price: 190000,
+    },
+    sp7: {
+        name: '8YO LULLABY TEE Ver2.0 # 3 COLOR',
+        img: 'image/product/1_d42f4103ecb141f1ae76aff6826cba87_master.webp',
+        price: 190000,
+    },
+    sp8: {
+        name: '8YO LULLABY TEE Ver2.0 # 3 COLOR',
+        img: 'image/product/1_d42f4103ecb141f1ae76aff6826cba87_master.webp',
         price: 190000,
     },
 };
@@ -265,4 +285,17 @@ const showCart = () => {
 const removeKey = (key) => {
     window.localStorage.removeItem(key);
     window.location = 'cart.html';
+};
+
+// navigation
+
+const navigation = ['trangchu', 'sanpham', 'bangsize'];
+
+const activeNavi = (key) => {
+    const filters = document.getElementsByClassName('filter');
+
+    for (let i = 0; i < navigation.length; i++) {
+        filters[i].classList.remove('active');
+    }
+    document.getElementById(key).classList.add('active');
 };

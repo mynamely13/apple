@@ -10,7 +10,11 @@
         <link rel="stylesheet" href="source/font-awesome-4.7.0/css/font-awesome.min.css" />
         <link rel="shortcut icon" href="image/logo.webp" />
         <link rel="stylesheet" href="style.css" />
-
+        <script>
+            window.onload = () => {
+                activeNavi('bangsize');
+            }
+        </script>
     </head>
     <body>
         <header class="header">
@@ -72,9 +76,9 @@
             <div class="wrrap-navigation">
                 <div class="navigation">
                     <ul>
-                        <li><a href="index.html" class="active filter" data-filters="trangchu">TRANG CHỦ</a></li>
-                        <li><a href="product.html" class="filter" data-filters="sanpham">SẢN PHẨM</a></li>
-                        <li><a href="size.html" class="filter" data-filters="bangsize">BẢNG SIZE</a></li>
+                        <li><a href="index.html" id="trangchu" class="active filter" data-filters="trangchu">TRANG CHỦ</a></li>
+                        <li><a onclick="openProduct('sp8')" id="sanpham" class="filter" data-filters="sanpham">SẢN PHẨM</a></li>
+                        <li><a href="size.html" id="bangsize" class="filter" data-filters="bangsize">BẢNG SIZE</a></li>
                         <li><a id="ins" class="filter" data-filters="insta">INSTAGRAM 8YO</a></li>
 
                         <li><a id="gt" class="filter" data-filters="gioithieu">GIÓI THIỆU 8YO</a></li>
